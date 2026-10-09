@@ -1,0 +1,16 @@
+{
+  "name": "朝の情報まとめ",
+  "short_name": "朝刊",
+  "description": "わくの毎朝の情報まとめ。読みながらセクションごとに採点する。",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f5f6",
+  "theme_color": "#2c6a86",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
