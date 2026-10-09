@@ -1,5 +1,5 @@
 // 朝刊アプリのオフライン用キャッシュ
-const VERSION = "asa-v1";
+const VERSION = "asa-v2";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest", "icon-192.png", "icon-512.png", "apple-touch-icon.png",
   "vendor/marked.min.js", "vendor/purify.min.js", "vendor/leaflet.js", "vendor/leaflet.css",
   "vendor/images/marker-icon.png", "vendor/images/marker-icon-2x.png", "vendor/images/marker-shadow.png"];

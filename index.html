@@ -34,12 +34,16 @@
         </button>
       </div>
     </div>
+    <nav class="tabs" role="tablist" aria-label="読むもの">
+      <button type="button" role="tab" id="tab-brief" data-view="brief" aria-selected="true">朝まとめ</button>
+      <button type="button" role="tab" id="tab-kabu" data-view="kabu" aria-selected="false">株ミニ講座</button>
+    </nav>
     <div class="datebar">
       <button id="prev" type="button" aria-label="前の回" disabled>‹</button>
       <span id="which">読み込み中</span>
       <button id="next" type="button" aria-label="次の回" disabled>›</button>
     </div>
-    <p class="help">各セクションを読んだら、すぐ下の数字をタップ。タップした時点で保存される。同じ数字をもう一度タップで取り消し。効く=進路・研究に直結/動ける=次の一手や試し方がある/初耳=知らなかった。</p>
+    <p class="help" id="help"></p>
   </header>
 
   <section id="settings" class="card settings" hidden>
@@ -64,12 +68,10 @@
   </section>
 
   <form id="f" onsubmit="return false">
-    <div id="body"><div class="empty">まとめを読み込んでいます。</div></div>
-    <div id="tail" hidden>
-      <section class="card"><h2>全体の分量</h2><div class="seg three"><input type="radio" id="vol-0" name="volume" value="多すぎ"><label for="vol-0">多すぎ</label><input type="radio" id="vol-1" name="volume" value="ちょうど"><label for="vol-1">ちょうど</label><input type="radio" id="vol-2" name="volume" value="足りない"><label for="vol-2">足りない</label></div></section>
-      <section class="card"><h2>ひとこと(任意)</h2><textarea id="note" placeholder="例:編入の話をもっと/この話を明日深掘りして"></textarea></section>
-    </div>
+    <div id="body"><div class="empty">読み込んでいます。</div></div>
+    <div id="tail" hidden></div>
   </form>
+  <p class="foot" id="foot" hidden>この講座は仕組みの理解が目的で、特定の銘柄の売買を勧めるものではありません。</p>
   <div id="status" role="status">接続中…</div>
 </div>
 <script src="vendor/marked.min.js"></script>
